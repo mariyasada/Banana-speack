@@ -7,6 +7,7 @@
 body{
     font-family: 'Lato', sans-serif;
     margin: 0;
+    color: var(--secondary-color);
 }
 :root{
     --primary-color:#10B981;
@@ -19,40 +20,43 @@ body{
     text-align: center;
     padding: 1.5rem;
 }
+main{
+    margin: auto;
+    max-width: 600px;
+    padding: 1rem;
+}
 textarea{
     box-sizing: border-box;
-    height: 130px;
-    width: 600px; 
-    margin: 2rem auto;
+    min-height: 20vh;
+    width: 100%; 
+    margin-top: 1.5rem;
     display: block;
     font-size: large;
     font-family: inherit;
 }
 button{
     background-color: var(--primary-color);
-    color: var(--secondary-color);
-    height: 60px;
-    width: 220px;
-    font-size: 1rem;
-    font-weight: bold;
-    font-family: inherit;
     border: 1px solid black;
-    margin-left: 382px;
-    padding: 1rem 0rem;
-    text-align: center;
+    margin: 0.8rem 0rem;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: large;
+    font-weight: bold;
+    
 }
-.translation{
+/* .translation{
     margin-left:365px ;
     padding: 0rem 1rem;
     margin-top: 1rem;
     
-}
+} */
 #text-output{
-    margin-top: 0rem;
+    margin-top: 0rem; 
     box-sizing: border-box;
     overflow: scroll;
-    height: 100px;
-    width: 600px;
+    min-height: 10vh;
+    max-height: 30vh;
+    width: 100%;
     border: 1px solid black;
 }
 
@@ -62,7 +66,7 @@ footer{
     position: fixed;
     width: 100%;
     bottom: 0;
-    padding: 1rem;
+    padding: 1.5rem;
     font-weight: bold;
 }
 footer p{
