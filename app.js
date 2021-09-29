@@ -12,7 +12,7 @@ var txtoutput =document.querySelector("#text-output");
      return Url + "?" + "text=" + text;
  }
 
- function errorHandler(){
+ function errorHandler(error){
      console.log("error occured",error);
      alert("something wrong with server! try again after some time");
  }
