@@ -7,12 +7,13 @@ var txtoutput =document.querySelector("#text-output");
  //var  serverUrl= "https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
  var Url="https://api.funtranslations.com/translate/minion.json";
 
-
- function constructUrl(text){
+//convert code into Es6
+ const constructUrl = (text) =>
+ {
      return Url + "?" + "text=" + text;
  }
 
- function errorHandler(error){
+ const errorHandler = (error)=> {
      console.log("error occured",error);
      alert("something wrong with server! try again after some time");
  }
